@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>tanka search</title>
+  </head>
+  <body>
+  <table>
+    <tr>
+      <th>#</th>
+      <th>上の句</th>
+      <th>下の句</th>
+      <th>作者</th>
+    </tr>
+    {{range .}}
+      <tr>
+        <td>{{.Kami}}</td>
+        <td>{{.Simo}}</td>
+        <td>{{.Sakusya}}</td>
+        <td>{{ . }}</td>
+      </tr>
+    {{end}}
+    </table>
+  </body>
+</html>
